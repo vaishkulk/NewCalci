@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>simple calculator</title>
+  vaishnavi
+</head>
+<body>
+ Enter number 1: <input type="number" id="num1" required autofocus>
+ Enter number 2: <input type="number" id="num2" required>
+  <input type="button" value="Add" onclick="add();" id="btn">
+  <input type="button" value="Sub" onclick="Sub();" id="btn">
+  <input type="button" value="Mul" onclick="Mul();" id="btn">
+  <input type="button" value="Div" onclick="Div();" id="btn">
+  
+    
+<div id="result">
+  
+  </div>
+  <script>
+    function add() {
+      var n1=document.getElementById("num1").value;
+      var n2=document.getElementById("num2").value;
+	
+      var res;
+        res=+n1 + +n2;
+      alert("The Result is "+res);
+      document.getElementById("result").innerText=res;
+    }
+     function Sub() {
+      var n1=document.getElementById("num1").value;
+      var n2=document.getElementById("num2").value;
+	
+      var res;
+        res=+n1 - +n2;
+      alert("The Result is "+res);
+      document.getElementById("result").innerText=res;
+    }
+     function Mul() {
+      var n1=document.getElementById("num1").value;
+      var n2=document.getElementById("num2").value;
+	
+      var res;
+        res=+n1 * +n2;
+      alert("The Result is "+res);
+      document.getElementById("result").innerText=res;
+    }
+     function Div() {
+      var n1=document.getElementById("num1").value;
+      var n2=document.getElementById("num2").value;
+	
+      var res;
+        res=+n1 / +n2;
+      alert("The Result is "+res);
+      document.getElementById("result").innerText=res;
+    }
+  
+  
+  
+  </script>
+</body>
+</html>
